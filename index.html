@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      #cover-image {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      .text-overlay {
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      color: white;
+      text-align: left;
+    }
+
+
+      .material-symbols-outlined {
+        position: absolute;
+      top: 85%;
+      left: 46%;
+        z-index:1;
+        transform:scale(0.7);
+      }
+
+      #scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bbf;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+}
+
+    </style>
+
+    <title>Yashasvi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+<header>
+  <nav id="nav-bar"style="background-color: rgb(0, 123, 191);" class="navbar navbar-expand-lg  fixed-top">
+    <div class="container-fluid">
+      <a style="color: white;font-size:x-large"class="navbar-brand" href="#"><b>Yashasvi</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" style="background-color: rgb(0, 123, 191);"tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul style="font-size:large"class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item">
+              <a id="nav-home"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Home</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a href="#experiences-section" id="nav-exp"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Experience</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#certs-section" id="nav-cert"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Certifications</a>
+            </li>
+
+            <li class="nav-item">
+              <a  href="#edu-section" id="nav-edu"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Education</a>
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <article id="home-article">
+  <img id="cover-image" src="asdf.jpg" alt="Cover Image">
+  <span class="material-symbols-outlined">
+    <img src="expand-more.png">
+    </span>
+
+    <div class="text-overlay">
+      <div style="font-size: 60px;background-color: rgba(0, 0, 0, 0.1);border-radius: 0px 30px 30px 0px;"><b>Hello, I'm Yashasvi</b></div><br>
+      <h2 style="background-color: rgba(0, 0, 0, 0.1);font-family: 'Times New Roman', Times, serif;border-radius: 0px 30px 30px 0px;">Pursuing B. Tech. in <br>Rail Systems and Communication Engineering from <br>Gati Shakti Vishwavidyalaya</h2>
+    </div>
+</article>
+
+<main data-bs-spy="scroll" data-bs-target="#nav-bar">
+
+  <h1 id="experiences-section" style="padding-left: 10%;padding-right: 10%;padding-top:6%"class="text-primary">Experience</h1>
+  <article style="padding-left: 10%;padding-right: 10%;padding-top:2%"id="whole-experience">
+    <div  style="padding-bottom:2%">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Summer Internship - Eastern Railways, Indian Railways</h4>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Topic: Evaluation of Driving Technique using Speed-Time Chart</h6>
+          <span>Aug 2021 - Sep 2021</span>
+          <p class="card-text">
+            <ul>
+            <li>Developed an Evaluation System for Evaluation of Driving Technique of Loco Pilots of Sealdah Suburban Trains using Speed-Time Chart</li>
+              <li>Two type of files were available for the analysis:
+                <ul>
+                  <li>A file containing details like time of arrival of trains, stoppage time at the stations and departure time</li>
+                  <li>File containing  data consisting of its speed and geolocation of every three seconds provided by tracker installed in every locomotive</li>
+                </ul>
+              </li>
+            <li>Speed-Time chart was generated using the extracted data of journey of the loco pilot from both the files</li>
+  
+            <li>Final score of the loco pilot was calculated based on whether he as done Brake Feel and Brake Power tests and the duration for which the train was near the Average Maximum Speed of the sections it has passed from</li>
+  
+            <li>Also considered Weather and Crowd Density aspects, because these factors affect the efficiency of the system</li>
+  
+            <li>Worked under the guidance of IT Cell, Control Room, Sealdah, Eastern Railways</li>
+            <li>Used MATLAB for the Data Analysis and Visualization.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+      </div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Summer Internship - Electric Loco Shed, Vadodara</h4>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Topic: Testing Setup for Digital I/O Cards of TCN based VCUs </h6>
+        <span>Jun 2022 - Jul 2022</span>
+        <p class="card-text">
+          <ul>
+          <li>Developed a testing setup for the Digital I/O cards for TCN  (Train Communication Network) based VCUs (Vehicle Control Units)</li>
+
+          <li>The conventional MICAS based VCUs of locomotives  were being replaced by TCN based VCUs provided by CDAC in new IGBT based Locomotives, but the official manual for the testing/maintenance of new VCUs was not provided by Indian Railways although more than 500 locos were working on line with TCN based VCU</li>
+
+          <li>Electric Loco Shed Tuglakabad was the first to develop test jig for testing Digital I/O cards of CDAC TCN based vehicle control unit with help of D413 tool and CDAC VCU Rack. Its design was made available in the Loco Shed Vadodara on request</li>
+
+          <li>VCU works on different signals achieved on different pins, testing setup is made by taking output of a pin as the input of another pin and getting known output at the interval of 30 seconds</li>
+
+          <li>The looping connections were made using the diagram provided by Electric Loco Shed Tuglakabad, which made Electric Loco Shed Vadodara, the second Loco Shed to perform testing of Digital I/O cards of TCN based VCU.</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <h1 id="certs-section"style="padding-left: 10%;padding-right: 10%;padding-top:4%"class="text-primary">Certifications</h1>
+  <article id="whole-certifications">
+    <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
+        <div style="padding-bottom: 2%;">
+        <div id="front-end" class="card" >
+            <div class="card-header" id="headingOne">
+                
+                    <a class="btn" id="collapseOneButton" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <h5>1. Meta Front-End Development Professional Certificate</h5>
+                    </a>
+            </div>
+            <div class="collapse" id="collapseOne">
+                <div class="card card-body">
+                    <ul>
+                        <li>Introduction to Front-End Development		[<a href="https://www.coursera.org/account/accomplishments/certificate/T92SSTMMCWBC">Link</a>]</li>
+                        <li>Programming in JavaScript		[<a href="https://www.coursera.org/account/accomplishments/certificate/C88VKZ6WCGKZ">Link</a>]</li>
+                        <li>Version Control		[<a href="https://www.coursera.org/account/accomplishments/certificate/NL8JSWH2D3D5">Link</a>] </li>
+                      </ul>
+                </div>
+              </div>
+        </div></div>
+
+        <div style="padding-bottom: 2%;">
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                    <a class="btn"  id="collapseTwoButton"  data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <h5>2. Google Data Analytics Professional Certificate</h5>
+                    </a>
+            </div>
+            <div class="collapse" id="collapseTwo">
+                <div class="card card-body">
+                    <ul>
+                        <li>Foundations: Data, Data, Everywhere			[<a href="https://www.coursera.org/account/accomplishments/certificate/39F4AFDRSG8R">Link</a>]</li>
+                        <li>Ask Questions to Make Data-Driven Decisions		[<a href="https://www.coursera.org/account/accomplishments/certificate/LZS3F5VZCWL7">Link</a>]</li>
+                      </ul>
+                </div>
+              </div>
+        </div></div>
+
+        <div style="padding-bottom: 2%;">
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                    <a class="btn"  id="collapseThreeButton"  data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <h5>3. Guided Projects on Linux</h5>
+                    </a>
+            </div>
+            <div class="collapse" id="collapseThree">
+                <div class="card card-body">
+                    <ul>
+                        <li>Getting started in Ubuntu Linux		[<a href="https://www.coursera.org/account/accomplishments/certificate/DQU8B72WWGEY">Link</a>] </li>
+                        <li>Command Line Basics in Linux			[<a href="https://www.coursera.org/account/accomplishments/certificate/9M72JMJPN3NL">Link</a>]</li>
+                        <li>Files and Directories in Linux File-system			[<a href="https://www.coursera.org/account/accomplishments/certificate/UKR2HPNATZK2">Link</a>]</li>
+                      </ul>
+                </div>
+              </div>
+        </div></div>
+
+        <div style="padding-bottom: 2%;">
+        <div class="card">
+            
+            <div class="card-header" id="headingFour">
+                    <a class="btn"  id="collapseFourButton" data-bs-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <h5>4. Google Project Management: Professional Certificate</h5>
+                    </a>
+            </div>
+            
+            <div class="collapse" id="collapseFour">
+                <div class="card card-body">
+                    <ul>
+                        <li>Foundations of Project Management		[<a href="https://www.coursera.org/account/accomplishments/certificate/JEPGSDMKJG2A">Link</a>] </li>
+                        <li>Project Initiation: Starting a Successful Project		[<a href="https://www.coursera.org/account/accomplishments/certificate/S7KDDR7X7SEW">Link</a>]</li>
+                        <li>Project Planning: Putting It All Together		[<a href="https://www.coursera.org/account/accomplishments/certificate/NKJHFBGJX5XM">Link</a>] </li>
+                      </ul>
+                </div>
+              </div>
+        </div></div>
+
+    </div>
+  </article>
+
+
+  <h1 id="edu-section"style="padding-left: 10%;padding-right: 10%;padding-top:4%"class="text-primary">Education</h1>
+  <article id="all-educations">
+    <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">B. Tech. - Rail Systems and Communication Engineering</h4>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Gati Shakti Vishwavidyalaya, Vadodara, Gujarat - 390004</h6>
+          <span>2020 - Present (2024)</span>
+          <p class="card-text">
+            CGPA: 7.92 (Till 5th Semester)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">10th - CBSE</h4>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Kendriya Vidyalaya, Chapra, Bihar - 841301</h6>
+          <span>2017</span>
+          <p class="card-text">
+            CGPA: 9.6
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Gati Shakti Vishwavidyalaya, Vadodara, Gujarat - 390004</h4>
+          <h6 class="card-subtitle mb-2 text-body-secondary">2020 - Present (2024)</h6>
+          <span>Jun 2022 - Jul 2022</span>
+          <p class="card-text">
+            CGPA: 7.92 (Till 5th Semester)
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">
+    <img style="object-fit: cover;height: 100%;width: 100%;" src="bak-top.png">
+  </button>
+
+  <script>
+    window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  if (document.documentElement.scrollTop > 300) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+}
+
+      window.onload = function() {
+        var delay = 1000;
+        var step = 20;
+        function scrup(){
+          window.scrollBy(0, -step);
+          console.log("Scrolling up");
+        }
+        function scrdown(){
+          window.scrollBy(0, +step);
+          console.log("Scrolling down");
+        }
+        for(let i = 0; i < 3; i++)
+        {
+          setTimeout(scrdown,delay);
+        }
+        for(let i = 0; i < 3; i++)
+        {
+          setTimeout(scrup,1500);
+        }
+    };
+
+  </script>
+
+  <script>
+    var collapsed = 0;
+    // Script for bolding the navbar text when corresponding part is scrolled on
+    window.addEventListener('scroll', function() {
+      var textElement1 = document.querySelector('#whole-experience');
+      var rect1 = textElement1.getBoundingClientRect();
+      var navInd1 = document.getElementById("nav-exp");
+      
+      if (rect1.top <= window.innerHeight && rect1.bottom >= window.innerHeight) {
+        navInd1.style.fontWeight = "bold";
+      } else {
+        navInd1.style.fontWeight = "normal";
+      }
+    });
+
+    window.addEventListener('scroll', function() {
+      var textElement2 = document.querySelector('#all-educations');
+      var rect2 = textElement2.getBoundingClientRect();
+      var navInd2 = document.getElementById("nav-edu");
+      if (rect2.top <= window.innerHeight && rect2.bottom >= 0) {
+        navInd2.style.fontWeight = "bold";
+      } else {
+        navInd2.style.fontWeight = "normal";
+      }
+    });
+
+    window.addEventListener('scroll', function() {
+      var textElement3 = document.querySelector('#all-educations');
+      var rect3 = textElement3.getBoundingClientRect();
+      var navInd3 = document.getElementById("nav-home");
+      if (window.pageYOffset === 0) {
+        navInd3.style.fontWeight = "bold";
+      } else {
+        navInd3.style.fontWeight = "normal";
+      }
+    });
+
+    window.addEventListener('scroll', function() {
+      var textElement = document.querySelector('#whole-certifications');
+      var rect = textElement.getBoundingClientRect();
+      var navInd = document.getElementById("nav-cert");
+      
+      if (rect.top <= window.innerHeight && rect.bottom >= window.innerHeight-60) {
+        navInd.style.fontWeight = "bold";
+
+        
+        if(collapsed==0)
+        {
+        // Code to expand the first collapsible automatically
+        // Function to expand the collapsible element
+        function expandCollapsible() {
+      // Find the button element by its ID
+      var button = document.getElementById('collapseOneButton');
+
+      // Programmatically press the button
+      button.click();
+        }
+        // Delay the expansion after 2 seconds
+        setTimeout(expandCollapsible, 1000);
+        collapsed=1;
+        }
+
+      } else {
+        navInd.style.fontWeight = "normal";
+      }
+    });
+
+
+  </script>
+
+    <script>
+
+
+
+        var cardHeader4 = document.getElementById('headingFour');
+        cardHeader4.addEventListener('click', function() {
+        var collapsible4 = document.getElementById('collapseFourButton');
+        collapsible4.click();
+        });
+
+        var cardHeader3 = document.getElementById('headingThree');
+        cardHeader3.addEventListener('click', function() {
+        var collapsible3 = document.getElementById('collapseThreeButton');
+        collapsible3.click();
+        });
+
+        var cardHeader2 = document.getElementById('headingTwo');
+        cardHeader2.addEventListener('click', function() {
+        var collapsible2 = document.getElementById('collapseTwoButton');
+        collapsible2.click();
+        });
+
+        var cardHeader1 = document.getElementById('headingOne');
+        cardHeader1.addEventListener('click', function() {
+        var collapsible1 = document.getElementById('collapseOneButton');
+        collapsible1.click();
+        });
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </main>
+    </body>
+</html>
