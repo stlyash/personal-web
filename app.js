@@ -1,3 +1,13 @@
+var imge = document.getElementById("res");
+
+if (/Mobi/.test(navigator.userAgent)) {
+    // Code to run if the page is being viewed on a phone
+    imge.height=400;
+  } else {
+    // Code to run if the page is being viewed on a non-phone device
+    imge.height=1100;
+  }
+
 var salTransx = 24;
 
 function zoomInd()
