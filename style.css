@@ -1,10 +1,20 @@
 .card{
 transition: box-shadow 0.3s;
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+background-color: #edefff;
+
 }
+.card:active {
+  transition: box-shadow 0s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: #edefff;
+  }
+
 /* code below for back to top dynamic button*/
 #scrollToTopBtn {
     display: none;
@@ -20,12 +30,9 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s;
   }
 
-
 .buttontopb {
     width: 5vw; /* Adjust the width of the button as needed */
     height: 10vh;
-
-
     position: relative;
     border: none;
     background: transparent;
