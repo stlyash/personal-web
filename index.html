@@ -3,13 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Yashasvi">
-    <meta name="title" content="Yashasvi">
-    <meta name="description" content="This is a personal website of Yashasvi, which is actually a resume">
-    <meta name="language" content="english">
-    <meta name="rating" content="safe for kids">
-    <meta name="copyright" content="Copyright 2023">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <style>
@@ -44,19 +37,7 @@
         transform:scale(0.7);
       }
 
-      #scrollToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  background-color: #007bbf;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
+
 
     </style>
 
@@ -122,12 +103,12 @@
 </header>
 
   <article id="home-article"style="overflow: hidden;"onmouseover="zoomInd()" onmouseout="zoomoInd()">
-  <img id="cover-image" style="transition: transform 4s ease;" src="asdf.jpg" alt="Cover Image" >
+  <img id="cover-image" style="transition: transform 2s ease;" src="asdf.jpg" alt="Cover Image" >
   <span class="material-symbols-outlined">
     <img src="expand-more.png">
     </span>
 
-    <div class="text-overlay" id="salutation"style="padding:20px;border-radius:30px;transition: transform 4s ease;background-color: rgba(0, 0, 0, 0.3);" >
+    <div class="text-overlay" id="salutation"style="padding:20px;border-radius:30px;transition: transform 2s ease;background-color: rgba(0, 0, 0, 0.3);" >
       <div style="font-size: 60px;"><b>Hello, I'm Yashasvi</b></div><br>
       <h2 style="font-family: 'Times New Roman', Times, serif;">Pursuing B. Tech. in <br>Rail Systems and Communication Engineering from <br>Gati Shakti Vishwavidyalaya</h2>
     </div>
@@ -419,19 +400,18 @@
 <button  class="buttontopb" id="scrollToTopBtn" onclick="scrollToTop()">
   <span class="shadowtopb"></span>
   <span class="edgetopb"></span>
-  <span style="text-align:center" class="fronttopb texttopb"> <img style="transform:scale(0.8) translate(-54%, -38%);" src="bak-top.png">
+  <span class="fronttopb texttopb" style="display: flex; justify-content: center; align-items: center;"><span style="display: flex; justify-content: center; align-items: center;transform:scale(2)">&#129145;</span>
   </span>
 </button>
 
 <div style="padding-left:10%;padding-right:10%;padding-top:6%;padding-bottom:4%">
 <h1 id="resume-section" class="text-primary"style="padding-bottom:2%">Resume</h1>
 <article id="a-resume">
-  <div class="card">
-  <embed src="Yashasvi_Resume.pdf" type="application/pdf" width="100%" height=1125>
-
-  <button style="margin:3%;align-self:center;" onclick="downloadPDF()" class="btno"> Download Resume
-  </button>
-</div>
+  <article id="a-resume">
+    <iframe width=100% id="res" src="https://drive.google.com/file/d/1oPHBR7crOcbPcvlmqdAeCYk6LepS2qa9BB-LuHM5ijI/preview" width="640" height="480" allow="autoplay"></iframe>
+    <button  onclick="downloadPDF()" class="btno"> Download Resume
+    </button>
+  </div>
 
 
 
@@ -492,6 +472,20 @@ function scrollToTop() {
     var collapsed = 0;
     // Script for bolding the navbar text when corresponding part is scrolled on
     window.addEventListener('scroll', function() {
+
+const master = document.querySelector(".fronttopb");
+const firstel = document.querySelector(".shadowtopb");
+const secondel = document.querySelector(".edgetopb");
+const thirdel = document.querySelector(".buttontopb");
+
+firstel.style.width = master.offsetWidth + "px";
+secondel.style.width = master.offsetWidth + "px";
+thirdel.style.width = master.offsetWidth + "px";
+
+
+
+
+
       var textElement1 = document.querySelector('#whole-experience');
       var rect1 = textElement1.getBoundingClientRect();
       var navInd1 = document.getElementById("nav-exp");
