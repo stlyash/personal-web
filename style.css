@@ -125,7 +125,6 @@ background-color: #edefff;
     outline: none;
    }
 
-
    .btno {
     /* Button styles */
     padding: 10px 20px;
@@ -136,13 +135,14 @@ background-color: #edefff;
     transition: box-shadow 0.3s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   }
-
+  
   .btno:hover {
     /* Shadow styles on hover */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
   }
-
-  .btno:mousedown {
+  
+  .btno:active {
     /* Shadow styles when clicked */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
+  
