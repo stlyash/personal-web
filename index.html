@@ -410,10 +410,12 @@
 
 </article>
 
-<button  class="buttontopb" id="scrollToTopBtn" onclick="scrollToTop()">
+<button  class="buttontopb" id="scrollToTopBtn" style="z-index: 5;" onclick="scrollToTop()">
   <span class="shadowtopb"></span>
   <span class="edgetopb"></span>
-  <span class="fronttopb texttopb" style="display: flex; justify-content: center; align-items: center;"><span style="display: flex; justify-content: center; align-items: center;transform:scale(1.5)">Top</span>
+  <span class="fronttopb texttopb" style="display: flex; justify-content: center;
+   align-items: center;"><span style="display: flex; justify-content: center;
+    align-items: center;transform:scale(1.5)">Top</span>
   </span>
 </button>
 
@@ -616,11 +618,11 @@ thirdel.style.width = master.offsetWidth + "px";
 
     <footer>
       <div class="row" style="align-items: center;">
-        <div class="col" style="margin:3%">
+        <div class="col firstrow" style="margin:3%">
           <img id="sign" src="footer_assets/signature.png" alt="signature">
         </div>
         
-        <div class="col ctcme" style="margin:3%;text-align: center;margin-right:20%;">
+        <div class="col ctcme secrow" style="margin:3%;text-align: center;margin-right:20%;">
           <h3  id="cont">Contact Me</h3>
           <button style="color:white;padding:0;border:0;background-color: transparent;" onmouseover="this.style.opacity='0.5'" 
           onmouseout="this.style.opacity='1'" id="cont-email" 
