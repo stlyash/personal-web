@@ -1,16 +1,20 @@
+
 .card{
-transition: box-shadow 0.3s;
+transition: all 0.2s;
 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
-  transition: box-shadow 0.3s;
+  transition: all 0.2s;
 box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 background-color: #edefff;
-
+transform:scale(1.01)
+}
+.card:hover::after {
+  transition: all 0.2s;
 }
 .card:active {
-  transition: box-shadow 0s;
+  transition: all 0.2s;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   background-color: #edefff;
   }
@@ -133,6 +137,7 @@ background-color: #edefff;
     border: none;
     cursor: pointer;
     transition: box-shadow 0.3s;
+    border-radius:5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   }
   
@@ -144,5 +149,14 @@ background-color: #edefff;
   .btno:active {
     /* Shadow styles when clicked */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  footer{
+    background-color: rgb(0, 123, 191);
+    color:white;
+  }
+
+  #sign{
+    margin:5%;
   }
   
