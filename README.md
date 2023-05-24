@@ -1,4 +1,5 @@
 # Personal Website of <a href="https://github.com/stlyash">@stlyash</a>
+This is a single page portfolio/resume website having sections as - Experience, Certifications, Education, Projects and Resume.
 The website is published on [yashasvi.dev](https://www.yashasvi.dev/) via Github Pages.
 ## Technologies/Languages Used
 * HTML
