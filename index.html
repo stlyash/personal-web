@@ -624,25 +624,25 @@ thirdel.style.width = master.offsetWidth + "px";
           <button style="color:white;padding:0;border:0;background-color: transparent;" onmouseover="this.style.opacity='0.5'" 
           onmouseout="this.style.opacity='1'" id="cont-email" 
           onclick="copyText()" value="yash@yashasvi.dev">yash@yashasvi.dev
-          <img style="transform:scale(0.4)" id="em-cpy" src="footer_assets/copy.png"></button> 
+          <img style="transform:scale(0.4)" id="em-cpy" src="footer_assets/copy.png" alt="Copy Button"></button> 
           | 
           <button style="color:white;padding:0;border:0;background-color: transparent;"
            onmouseover="this.style.opacity='0.5'" 
           onmouseout="this.style.opacity='1'" id="cont-mob"
           onclick="copyText1()" value="+91 8540904380">+91 8540904380
-          <img style="transform:scale(0.4)" id="ph-cpy" src="footer_assets/copy.png"></button> 
+          <img style="transform:scale(0.4)" id="ph-cpy" src="footer_assets/copy.png" alt="Copy Button"></button> 
         </div>
       </div>
 
     <script>
-              function copyText() {
-      /* Select text area by id*/
-      var Text = document.getElementById("cont-email").value;
-      navigator.clipboard.writeText(Text);
-      document.getElementById("em-cpy").src="footer_assets/done.png";
-      setTimeout(function() {
-        document.getElementById("em-cpy").src="footer_assets/copy.png";
-      }, 3000); 
+      function copyText() {
+        /* Select text area by id*/
+        var Text = document.getElementById("cont-email").value;
+        navigator.clipboard.writeText(Text);
+        document.getElementById("em-cpy").src="footer_assets/done.png";
+        setTimeout(function() {
+          document.getElementById("em-cpy").src="footer_assets/copy.png";
+        }, 3000); 
   }
 
   function copyText1() {
