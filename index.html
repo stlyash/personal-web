@@ -111,7 +111,7 @@
   <article id="home-article"style="overflow: hidden;"onmouseover="zoomInd()" onmouseout="zoomoInd()">
   <img id="cover-image" style="transition: transform 4s ease;" src="asdf.jpg" alt="Cover Image" >
   <span class="material-symbols-outlined">
-    <img src="expand-more.png" alt="Down Arrow">
+    <a href="#experiences-section"><img src="expand-more.png" alt="Down Arrow"></a>
     </span>
 
     <div class="text-overlay" id="salutation"style="padding:20px;border-radius:30px;transition: transform 4s ease;background-color: rgba(0, 0, 0, 0.3);" >
@@ -619,18 +619,19 @@ thirdel.style.width = master.offsetWidth + "px";
         <div class="col" style="margin:3%">
           <img id="sign" src="footer_assets/signature.png" alt="signature">
         </div>
-        <div class="col" style="margin:3%;text-align: center;margin-right:20%">
+        
+        <div class="col ctcme" style="margin:3%;text-align: center;margin-right:20%;">
           <h3  id="cont">Contact Me</h3>
           <button style="color:white;padding:0;border:0;background-color: transparent;" onmouseover="this.style.opacity='0.5'" 
           onmouseout="this.style.opacity='1'" id="cont-email" 
           onclick="copyText()" value="yash@yashasvi.dev">yash@yashasvi.dev
-          <img style="transform:scale(0.4)" id="em-cpy" src="footer_assets/copy.png" alt="Copy Button"></button> 
+          <img id="em-cpy" src="footer_assets/copy.png" alt="Copy Button"></button> 
           | 
           <button style="color:white;padding:0;border:0;background-color: transparent;"
            onmouseover="this.style.opacity='0.5'" 
           onmouseout="this.style.opacity='1'" id="cont-mob"
           onclick="copyText1()" value="+91 8540904380">+91 8540904380
-          <img style="transform:scale(0.4)" id="ph-cpy" src="footer_assets/copy.png" alt="Copy Button"></button> 
+          <img id="ph-cpy" src="footer_assets/copy.png" alt="Copy Button"></button> 
         </div>
           <div style="height:1px;background-color:rgb(148, 168, 223)"></div>
           <span style="text-align:center;margin:2%">

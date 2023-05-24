@@ -159,4 +159,13 @@ transform:scale(1.01)
   #sign{
     margin:5%;
   }
+
+  .ctcme{
+    transform:translateX(-28%);
+  }
+
+  #ph-cpy,#em-cpy{
+    transform:scale(0.4);
+  }
+
   
