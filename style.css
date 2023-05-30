@@ -167,4 +167,10 @@ transform:scale(1.01)
     transform:scale(0.4);
   }
 
+  @media only screen and (max-width: 600px) {
+    .secrow{
+      transform:translateX(15%);
+    }
+  }
+
   

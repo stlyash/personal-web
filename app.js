@@ -32,24 +32,24 @@ function zoomoInd()
     
 }
 
-window.onload = function() {
+// window.onload = function() {
 
-  function isElementAbove(element1, element2) {
-    const rect1 = element1.getBoundingClientRect();
-    const rect2 = element2.getBoundingClientRect();
+//   function isElementAbove(element1, element2) {
+//     const rect1 = element1.getBoundingClientRect();
+//     const rect2 = element2.getBoundingClientRect();
   
-    return rect1.top < rect2.top;
-  }
+//     return rect1.top < rect2.top;
+//   }
   
-  const element1 = document.querySelector('.firstrow');
-  const element2 = document.querySelector('.secrow');
-  // Call the function
-  const isAbove = isElementAbove(element1, element2);
-  if(isAbove){
-    const elements = document.querySelectorAll('.secrow');
+//   const element1 = document.querySelector('.firstrow');
+//   const element2 = document.querySelector('.secrow');
+//   // Call the function
+//   const isAbove = isElementAbove(element1, element2);
+//   if(isAbove){
+//     const elements = document.querySelectorAll('.secrow');
   
-    elements.forEach((element) => {
-      element.style.transform = `translate(${15}%, 0px)`;
-    });
-  }
-};
+//     elements.forEach((element) => {
+//       element.style.transform = `translate(${15}%, 0px)`;
+//     });
+//   }
+// };
