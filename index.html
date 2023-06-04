@@ -179,7 +179,7 @@
   <h1 id="certs-section"style="padding-left: 10%;padding-right: 10%;padding-top:4%"class="text-primary">Certifications</h1>
   <article id="whole-certifications">
     <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
-        <div style="padding-bottom: 2%;">
+      <div style="padding-bottom: 2%;">
         <div id="front-end" class="card" >
             <div class="card-header" id="headingOne">
                 
@@ -192,13 +192,15 @@
                     <ul>
                         <li>Introduction to Front-End Development		[<a href="https://www.coursera.org/account/accomplishments/certificate/T92SSTMMCWBC">Link</a>]</li>
                         <li>Programming in JavaScript		[<a href="https://www.coursera.org/account/accomplishments/certificate/C88VKZ6WCGKZ">Link</a>]</li>
-                        <li>Version Control		[<a href="https://www.coursera.org/account/accomplishments/certificate/NL8JSWH2D3D5">Link</a>] </li>
-                      </ul>
+                        <li>Version Control		[<a href="https://www.coursera.org/account/accomplishments/certificate/NL8JSWH2D3D5">Link</a>]</li>
+                        <li>HTML and CSS in Depth    [<a href="https://coursera.org/share/17c6e9355877127e3823af61b6a6d721">Link</a>]</li>
+                    </ul>
                 </div>
-              </div>
-        </div></div>
+            </div>
+        </div>
+      </div>
 
-        <div style="padding-bottom: 2%;">
+      <div style="padding-bottom: 2%;">
         <div class="card">
             <div class="card-header" id="headingTwo">
                     <a class="btn"  id="collapseTwoButton"  data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -213,10 +215,11 @@
                         <li>Prepare Data for Exploration    [<a href="https://coursera.org/share/29192809d1a9f72a69521d6e3e07b4cd">Link</a>]</li>
                       </ul>
                 </div>
-              </div>
-        </div></div>
+            </div>
+        </div>
+      </div>
 
-        <div style="padding-bottom: 2%;">
+      <div style="padding-bottom: 2%;">
         <div class="card">
             <div class="card-header" id="headingThree">
                     <a class="btn"  id="collapseThreeButton"  data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -231,10 +234,11 @@
                         <li>Files and Directories in Linux File-system			[<a href="https://www.coursera.org/account/accomplishments/certificate/UKR2HPNATZK2">Link</a>]</li>
                       </ul>
                 </div>
-              </div>
-        </div></div>
+            </div>
+        </div>
+      </div>
 
-        <div style="padding-bottom: 2%;">
+      <div style="padding-bottom: 2%;">
         <div class="card">
             
             <div class="card-header" id="headingFour">
@@ -251,8 +255,9 @@
                         <li>Project Planning: Putting It All Together		[<a href="https://www.coursera.org/account/accomplishments/certificate/NKJHFBGJX5XM">Link</a>] </li>
                       </ul>
                 </div>
-              </div>
-        </div></div>
+            </div>
+        </div>
+      </div>
 
     </div>
   </article>
@@ -420,20 +425,19 @@
   </span>
 </button>
 
-<div style="padding-left:10%;padding-right:10%;padding-top:6%;padding-bottom:4%">
-<h1 id="resume-section" class="text-primary"style="padding-bottom:2%">Resume</h1>
 <article id="a-resume">
-  <article id="a-resume">
-    <iframe width=100% id="res" src="https://drive.google.com/file/d/1oPHBR7crOcbPcvlmqdAeCYk6LepS2qa9BB-LuHM5ijI/preview" width="640" height="480" allow="autoplay"></iframe>
-    <button style="margin:5px" onclick="downloadPDF()" class="btno"> Download Resume
-    </button>
+  <div style="padding-left:10%;padding-right:10%;padding-top:6%;padding-bottom:4%">
+    <h1 id="resume-section" class="text-primary"style="padding-bottom:2%">Resume</h1>
+
+      <iframe width=100% id="res" 
+      src="https://drive.google.com/file/d/1oPHBR7crOcbPcvlmqdAeCYk6LepS2qa9BB-LuHM5ijI/preview" 
+      width="640" height="480" allow="autoplay"></iframe>
+
+      <button style="margin:5px" onclick="downloadPDF()" class="btno"> Download Resume
+      </button>
+    
   </div>
-
-
-
-
 </article>
-</div>
 
 <script>
   function downloadPDF() {
@@ -442,47 +446,47 @@
     link.target='_blank';
     link.click();
   }
-  </script>
+</script>
 
-  <script>
-    window.onscroll = function() { scrollFunction() };
+<script>
+  window.onscroll = function() { scrollFunction() };
 
-function scrollFunction() {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-  if (document.documentElement.scrollTop > 300) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
+    if (document.documentElement.scrollTop > 300) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
   }
-}
 
-function scrollToTop() {
-  document.documentElement.scrollTop = 0;
-}
+  function scrollToTop() {
+    document.documentElement.scrollTop = 0;
+  }
 
-      window.onload = function() {
-        var delay = 1000;
-        var step = 20;
-        function scrup(){
-          window.scrollBy(0, -step);
-          console.log("Scrolling up");
-        }
-        function scrdown(){
-          window.scrollBy(0, +step);
-          console.log("Scrolling down");
-        }
-        for(let i = 0; i < 3; i++)
-        {
-          setTimeout(scrdown,delay);
-        }
-        for(let i = 0; i < 3; i++)
-        {
-          setTimeout(scrup,1500);
-        }
-    };
+  window.onload = function() {
+    var delay = 1000;
+    var step = 20;
+    function scrup(){
+      window.scrollBy(0, -step);
+      console.log("Scrolling up");
+    }
+    function scrdown(){
+      window.scrollBy(0, +step);
+      console.log("Scrolling down");
+    }
+    for(let i = 0; i < 3; i++)
+    {
+      setTimeout(scrdown,delay);
+    }
+    for(let i = 0; i < 3; i++)
+    {
+      setTimeout(scrup,1500);
+    }
+  };
 
-  </script>
+</script>
 
   <script>
     var collapsed = 0;
@@ -588,32 +592,32 @@ thirdel.style.width = master.offsetWidth + "px";
 
   </script>
 
-    <script>
+<script>
 
-        var cardHeader4 = document.getElementById('headingFour');
-        cardHeader4.addEventListener('click', function() {
-        var collapsible4 = document.getElementById('collapseFourButton');
-        collapsible4.click();
-        });
+  var cardHeader4 = document.getElementById('headingFour');
+  cardHeader4.addEventListener('click', function() {
+  var collapsible4 = document.getElementById('collapseFourButton');
+  collapsible4.click();
+  });
 
-        var cardHeader3 = document.getElementById('headingThree');
-        cardHeader3.addEventListener('click', function() {
-        var collapsible3 = document.getElementById('collapseThreeButton');
-        collapsible3.click();
-        });
+  var cardHeader3 = document.getElementById('headingThree');
+  cardHeader3.addEventListener('click', function() {
+  var collapsible3 = document.getElementById('collapseThreeButton');
+  collapsible3.click();
+  });
 
-        var cardHeader2 = document.getElementById('headingTwo');
-        cardHeader2.addEventListener('click', function() {
-        var collapsible2 = document.getElementById('collapseTwoButton');
-        collapsible2.click();
-        });
+  var cardHeader2 = document.getElementById('headingTwo');
+  cardHeader2.addEventListener('click', function() {
+  var collapsible2 = document.getElementById('collapseTwoButton');
+  collapsible2.click();
+  });
 
-        var cardHeader1 = document.getElementById('headingOne');
-        cardHeader1.addEventListener('click', function() {
-        var collapsible1 = document.getElementById('collapseOneButton');
-        collapsible1.click();
-        });
-      </script>
+  var cardHeader1 = document.getElementById('headingOne');
+  cardHeader1.addEventListener('click', function() {
+  var collapsible1 = document.getElementById('collapseOneButton');
+  collapsible1.click();
+  });
+</script>
       
     </main>
 
