@@ -7,7 +7,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 .card:hover {
   transition: all 0.2s;
 box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-background-color: #edefff;
+background-color: #e4f7f7;
 transform:scale(1.01)
 }
 .card:hover::after {
@@ -16,7 +16,7 @@ transform:scale(1.01)
 .card:active {
   transition: all 0.2s;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  background-color: #edefff;
+  background-color: #e4f7f7;
   }
 
 /* code below for back to top dynamic button*/
