@@ -3,12 +3,25 @@
 transition: all 0.2s;
 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
+.unselect{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none; /* Generic */
+}
 
+.educard:hover{
+  background-color:#f5f4f2
+}
 .card:hover {
   transition: all 0.2s;
 box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-background-color: #e4f7f7;
-transform:scale(1.01)
+}
+.spcard:hover{
+  transition: all 0.2s;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  background-color: #e4f7f7;
+  transform:scale(1.01)
 }
 .card:hover::after {
   transition: all 0.2s;
