@@ -3,6 +3,29 @@
 transition: all 0.2s;
 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
+
+.scroll-container{
+  opacity:0;
+  transform:translateX(-100%);
+}
+.scroll-container.show{
+  opacity:1;
+  transform:translateX(0);
+  transition:2s;
+}
+
+.scroll-container2{
+  opacity:0;
+  transform:translateX(100%);
+}
+.scroll-container2.show{
+  opacity:1;
+  transform:translateX(0);
+  transition:2s;
+}
+
+
+
 .unselect{
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -11,7 +34,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .educard:hover{
-  background-color:#f5f4f2
+  background-color:rgba(0, 0, 255,0.1);
 }
 .card:hover {
   transition: all 0.2s;
