@@ -1,7 +1,6 @@
 
 .card{
 transition: all 0.2s;
-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-container{
@@ -32,13 +31,20 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -ms-user-select: none; /* Internet Explorer */
   user-select: none; /* Generic */
 }
-
+.projcard{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.projcard:hover{
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
 .educard:hover{
   background-color:rgba(0, 0, 255,0.1);
 }
 .card:hover {
   transition: all 0.2s;
-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.spcard{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 .spcard:hover{
   transition: all 0.2s;
@@ -208,5 +214,3 @@ box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
       transform:translateX(15%);
     }
   }
-
-  
