@@ -1,7 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function() {
+  setTimeout(function() {
       document.getElementById('circ').style.display='none';
       document.getElementById('rest').style.display='block';
-});
+      document.body.style.overflowY = "visible";
+  console.log('loader');
+}, 3000); // 10000 milliseconds = 10 seconds
+};
 
 
 
