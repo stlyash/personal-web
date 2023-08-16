@@ -54,13 +54,42 @@
       }
 
 
-
+      #circ{
+            width: 100%;
+            height:100%;
+            margin-top: 15%;
+            overflow: hidden;
+            font-size: 2vmin;
+            font-family: 'cousine',monospace;
+            text-transform: uppercase;
+            animation: spin 14s linear infinite;
+            color: black;
+        }
+        @keyframes spin{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
     </style>
 
     <title>Yashasvi | Web Development and Competitive Programming</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body>
+  
+    <div id="circ" style="display:block">
+      _Yashasvi_. Web Development . Competitive Programming . Data Analytics . 
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+   <script>
+       let circ = new CircleType(document.getElementById('circ'));
+       circ.radius(20);
+   </script>
+
+<div id="rest" style="display:none">
+
 <header>
   <nav id="nav-bar"style="background-color: rgb(0, 123, 191);" class="navbar navbar-expand-lg  fixed-top">
     <div class="container-fluid">
@@ -715,5 +744,6 @@ thirdel.style.width = master.offsetWidth + "px";
 
     <script src="app.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </div>
     </body>
 </html>

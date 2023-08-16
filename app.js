@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById('circ').style.display='none';
+      document.getElementById('rest').style.display='block';
+});
+
+
+
 window.addEventListener('scroll', function() {
   var eduframe = document.querySelector('.scroll-container');
   var eduframe2 = document.querySelector('.scroll-container2');
@@ -53,3 +60,4 @@ function zoomoInd()
     sal.style.backgroundColor='rgba(0, 0, 0, 0.3)';
     
 }
+
