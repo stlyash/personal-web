@@ -46,10 +46,26 @@
 
       .material-symbols-outlined {
         position: absolute;
-      top: 85%;
-      left:50%;
+        display:grid;
+        top: 85%;
+        left:47%;
         z-index:1;
         transform:scale(0.7);
+      }
+
+      @media only screen and (max-width: 600px) {
+        .material-symbols-outlined {
+        position: absolute;
+        display:grid;
+        top: 85%;
+        left:40%;
+        z-index:1;
+        transform:scale(0.7);
+      }
+
+      .text-overlay{
+        transform:scale(0.8) translateX(-20%);
+      }
       }
 
 

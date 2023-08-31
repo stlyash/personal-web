@@ -4,7 +4,7 @@ window.onload = function() {
       document.getElementById('rest').style.display='block';
       document.body.style.overflowY = "visible";
   console.log('loader');
-}, 3000); // 10000 milliseconds = 10 seconds
+}, 1); //there was 3000
 };
 
 
@@ -64,4 +64,3 @@ function zoomoInd()
     sal.style.backgroundColor='rgba(0, 0, 0, 0.3)';
     
 }
-
