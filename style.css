@@ -197,7 +197,9 @@ transition: all 0.2s;
     background-color: rgb(0, 123, 191);
     color:white;
   }
-
+.contact-links{
+  margin:0.5cm;
+}
   #sign{
     margin:5%;
   }

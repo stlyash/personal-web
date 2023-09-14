@@ -1,11 +1,30 @@
 window.onload = function() {
   setTimeout(function() {
-      document.getElementById('circ').style.display='none';
-      document.getElementById('rest').style.display='block';
-      document.body.style.overflowY = "visible";
-  console.log('loader');
-}, 1); //there was 3000
+document.getElementById('circ').style.display='none';
+document.getElementById('rest').style.display='block';
+document.body.style.overflowY = "visible";
+}, 3000); //there was 3000
 };
+  // Get a reference to the iframe
+  var iframe = document.getElementById('contform');
+
+  // Check if the iframe has loaded
+  iframe.addEventListener('load', function () {
+    // Access the iframe's content document
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+    // Get the form element within the iframe
+    var form = iframeDoc.getElementById('contact-form'); // Replace with your form's ID
+    var thank = document.getElementById('thank');
+    // Add a submit event listener to the form
+    form.addEventListener('submit', function (event) {
+      iframe.style.display='none';
+      thank.removeAttribute("hidden");
+    });
+  });
+
+
+
 
 
 

@@ -133,13 +133,13 @@
             </li>
 
             <li class="nav-item">
-              <a href="#certs-section" id="nav-cert"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              <a href="#whole-certifications" id="nav-cert"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
               onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
               Certifications</a>
             </li>
 
             <li class="nav-item">
-              <a  href="#edu-section" id="nav-edu"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              <a  href="#all-educations" id="nav-edu"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
               onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
               Education</a>
             </li>
@@ -151,9 +151,15 @@
             </li>
 
             <li class="nav-item">
-              <a href="#resume-section"id="nav-resume"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              <a href="#a-resume"id="nav-resume"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
               onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
               Resume</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#connect"id="nav-contact"style="color: white;" onmouseover="this.style.color='#aad6ee'" 
+              onmouseout="this.style.color='white'"class="nav-link active btn" aria-current="page" href="#">
+              Connect With Me</a>
             </li>
           </ul>
         </div>
@@ -234,8 +240,9 @@
         </div>
   </article>
 
-  <h1 id="certs-section"style="padding-left: 10%;padding-right: 10%;padding-top:4%"class="text-primary unselect">Certifications</h1>
+  
   <article id="whole-certifications">
+    <h1 id="certs-section"style="padding-left: 10%;padding-right: 10%;padding-top:6%"class="text-primary unselect">Certifications</h1>
     <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
       <div style="padding-bottom: 2%;">
         <div id="front-end" class="card spcard" >
@@ -321,8 +328,9 @@
   </article>
 
 
-  <h1 id="edu-section"style="padding-left: 10%;padding-right: 10%;padding-top:4%"class="text-primary unselect">Education</h1>
+  
   <article id="all-educations">
+    <h1 id="edu-section"style="padding-left: 10%;padding-right: 10%;padding-top:6%"class="text-primary unselect">Education</h1>
     <div style="padding-left: 10%;padding-right: 10%;padding-top:2%">
       <div class="card educard unselect">
         <div class="card-body">
@@ -527,6 +535,46 @@
   </div>
 </article>
 
+<article id="connect">
+  <div style="padding-left:10%;padding-right:10%;padding-top:6%;padding-bottom:4%">
+    <h1 id="connect-section" class="text-primary unselect"
+    style="padding-bottom:2%">Connect With Me</h1>
+
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <div class="contact-links">
+          <a href="https://github.com/stlyash" target="_blank">Github 🔗</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/kmryashasvi/" target="_blank">Linkedin 🔗</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.codechef.com/users/kmryashasvi" target="_blank">Codechef 🔗</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.hackerrank.com/kumaryashasvi255" target="_blank">HackerRank 🔗</a>
+        </div>
+        
+        
+        
+        
+        
+      </div>
+
+      <div class="col-sm-12 col-lg-6">
+        <iframe width="100%"style="height:12cm" id="contform" src="contactMe.html"></iframe>
+        <div class="thank" id="thank" hidden>
+          <img src="greentick.png" style="margin-left:30%;border-radius: 1.5cm;width:3cm;height:3cm;">
+          <br>
+          <br>
+          Thank You for contacting me, I will get back to you soon :)
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</article>
+
 <script>
   function downloadPDF() {
     var link = document.createElement('a');
@@ -640,10 +688,20 @@ thirdel.style.width = master.offsetWidth + "px";
       var textElement6 = document.querySelector('#a-resume');
       var rect6 = textElement6.getBoundingClientRect();
       var navInd6 = document.getElementById("nav-resume");
-      if (rect6.top <= window.innerHeight && rect6.bottom >= 0) {
+      if (rect6.top <= window.innerHeight-400 && rect6.bottom >= window.innerHeight-100) {
         navInd6.style.fontWeight = "bold";
       } else {
         navInd6.style.fontWeight = "normal";
+      }
+    });
+    window.addEventListener('scroll', function() {
+      var textElement7 = document.querySelector('#connect');
+      var rect7 = textElement7.getBoundingClientRect();
+      var navInd7 = document.getElementById("nav-contact");
+      if (rect7.top <= window.innerHeight-200 && rect7.bottom >= 0) {
+        navInd7.style.fontWeight = "bold";
+      } else {
+        navInd7.style.fontWeight = "normal";
       }
     });
 
