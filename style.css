@@ -10,7 +10,7 @@ transition: all 0.2s;
 .scroll-container.show{
   opacity:1;
   transform:translateX(0);
-  transition:2s;
+  transition:1.5s;
 }
 
 .scroll-container2{
@@ -20,7 +20,17 @@ transition: all 0.2s;
 .scroll-container2.show{
   opacity:1;
   transform:translateX(0);
-  transition:2s;
+  transition:1.5s;
+}
+
+.scroll-container3{
+  opacity:0;
+  transform:translateX(-100%);
+}
+.scroll-container3.show{
+  opacity:1;
+  transform:translateX(0);
+  transition:1.5s;
 }
 
 

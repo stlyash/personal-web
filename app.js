@@ -48,6 +48,16 @@ window.addEventListener('scroll', function() {
   }
 });
 
+window.addEventListener('scroll', function() {
+  var eduframe = document.querySelector('.scroll-container');
+  var eduframe3 = document.querySelector('.scroll-container3');
+  var recta3 = eduframe3.getBoundingClientRect();
+  if (recta3.top <= window.innerHeight && recta3.bottom >= window.innerHeight) {
+    eduframe3.classList.add('show');
+    eduframe.classList.add('show');
+  }
+});
+
 
 
 var imge = document.getElementById("res");
