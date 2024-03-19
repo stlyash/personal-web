@@ -1,6 +1,6 @@
 # Personal Website
 This is a single page portfolio/resume website having sections as - Experience, Certifications, Education, Projects and Resume.
-The website is published on (https://www.github.io/yashlikescode/personal-web/) via Github Pages.
+The website is published on https://www.github.io/yashlikescode/personal-web/ via Github Pages.
 ## Technologies/Languages Used
 * HTML
 * CSS
